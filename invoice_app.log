@@ -1,0 +1,21 @@
+2025-06-20 22:20:56,211 - INFO - Application started.
+2025-06-20 22:22:13,903 - INFO - Starting email processing in a background thread.
+2025-06-20 22:22:13,967 - INFO - Connecting to imap.gmail.com as chkavyaa123@gmail.com.
+2025-06-20 22:22:15,231 - INFO - Logged in successfully.
+2025-06-20 22:22:15,785 - INFO - Found 3 email(s) with subject 'Invoice'.
+2025-06-20 22:22:16,753 - INFO - Processing email: Your Viben Order Summary for Invoice No :24TLME0040008069
+2025-06-20 22:22:17,188 - INFO - Processing email: Your Viben Order Summary for Invoice No :25TLME0040009621
+2025-06-20 22:22:18,025 - INFO - Processing email: Fwd: please find the invoice attachment
+2025-06-20 22:22:18,279 - INFO - Disconnected from email server.
+2025-06-20 22:22:18,280 - INFO - Processing all PDFs in the attachments folder.
+2025-06-20 22:22:18,282 - INFO - Reading PDF: 24TLME0040008069.pdf
+2025-06-20 22:22:18,283 - INFO - Extracting text from PDF: attachments\24TLME0040008069.pdf
+2025-06-20 22:22:18,368 - INFO - Extracted data: {'Legal Entity Name': 'Miraj Cinemas', 'Restaurant Name': 'Balanagar', 'Restaurant Address': 'A2A Central, H.No. 6-9-30, SY.No.30 (Part), Opp To: IDPL Colony, BalaNagar, Telangana, 500037', 'Restaurant GSTIN': '36AAFCM5174R1ZQ', 'Restaurant FSSAI': '13620014000087', 'Invoice No': '24TLME0040008069', 'Invoice Date': '23/10/2024 11:44 AM', 'Customer Name': 'Kavya', 'Delivery Address': 'A2A Central, H.No. 6-9-30, SY.No.30 (Part), Opp To: IDPL Colony, BalaNagar, Telangana, 500037', 'State Name  Place of Supply': 'Telangana(36)', 'HSN Code': '996331', 'Service Description': 'Restaurant Service', 'Amount in words': 'THREE HUNDRED FOUR RUPEES ONLY', 'VIBEN PAN': 'AAGCV4511N', 'VIBEN CIN': 'U72900TG2018PTC124884', 'VIBEN GST': '36AAGCV4511N1Z1 Authorised Signatory'}
+2025-06-20 22:22:18,370 - INFO - Reading PDF: 25TLME0040009621.pdf
+2025-06-20 22:22:18,371 - INFO - Extracting text from PDF: attachments\25TLME0040009621.pdf
+2025-06-20 22:22:18,402 - INFO - Extracted data: {'Legal Entity Name': 'Miraj Cinemas', 'Restaurant Name': 'Balanagar', 'Restaurant Address': 'A2A Central, H.No. 6-9-30, SY.No.30 (Part), Opp To: IDPL Colony, BalaNagar, Telangana, 500037', 'Restaurant GSTIN': '36AAFCM5174R1ZQ', 'Restaurant FSSAI': '13620014000087', 'Invoice No': '25TLME0040009621', 'Invoice Date': '02/04/2025 2:11 PM', 'Customer Name': 'Kavya', 'Delivery Address': 'A2A Central, H.No. 6-9-30, SY.No.30 (Part), Opp To: IDPL Colony, BalaNagar, Telangana, 500037', 'State Name  Place of Supply': 'Telangana(36)', 'HSN Code': '996331', 'Service Description': 'Restaurant Service', 'Amount in words': 'FIVE HUNDRED SEVENTY RUPEES AND FORTY PAISE ONLY', 'VIBEN PAN': 'AAGCV4511N', 'VIBEN CIN': 'U72900TG2018PTC124884', 'VIBEN GST': '36AAGCV4511N1Z1 Authorised Signatory'}
+2025-06-20 22:22:18,403 - INFO - Reading PDF: dummy invoice.pdf
+2025-06-20 22:22:18,404 - INFO - Extracting text from PDF: attachments\dummy invoice.pdf
+2025-06-20 22:22:18,671 - INFO - Extracted data: {'12': '10', '05': '00'}
+2025-06-20 22:22:18,674 - INFO - Displaying data in the UI table.
+2025-06-20 22:22:37,714 - INFO - Exported data to 'extracted_data.csv'.
