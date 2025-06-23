@@ -1,6 +1,7 @@
                                               
   AUTOMATED INVOICE PROCESSING SYSTEM
   
+
 This project automates the extraction of invoice information from PDF documents and email attachments. It collects, processes, and organizes invoice data into structured formats such as CSV for streamlined financial operations or audits.
 
 FEATURES
