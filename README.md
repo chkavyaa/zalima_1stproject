@@ -1,48 +1,126 @@
                                               
   AUTOMATED INVOICE PROCESSING SYSTEM
   
+1. Introduction
+   
+The Automated Invoice processing System automates the retrieval of invoice documents from email and extracts key invoice information such as invoice number, date, amount, and vendor name. The extracted data is exported into structured CSV files for further use in financial processes.
 
-This project automates the extraction of invoice information from PDF documents and email attachments. It collects, processes, and organizes invoice data into structured formats such as CSV for streamlined financial operations or audits.
-
-FEATURES
 
 
-- 📥 Fetch invoices from email (IMAP)
-- 🔍 Extract and parse text from PDF invoices
-- 🔎 Identify key fields (Invoice Number, Date, Vendor, Amount)
-- 📤 Export structured data to CSV
-- 🧾 Optional GUI and HTML view for results
+
+2. Objectives
+   
+- Automatically retrieve invoice attachments from emails
+
+-  Extract text content from invoice PDFs
+
+- Identify and parse invoice metadata
+
+- Store extracted data in structured CSV
+
+- Offer GUI and HTML viewing options
+
 
 
   
-
- INSTALL REQUIRED LIBRARIES:
-
+3. System Architecture
 
 
-pip install -r requirements.txt
-
-Make sure to include packages such as:
-pandas
-
-imaplib2 or imapclient
-
-pdfplumber or PyMuPDF
-
-tkinter (preinstalled with Python)
-
-re (regular expressions)
+   
+The system is built using modular Python scripts. Below are the components:
 
 
+- Email Module (`imap.py`, `email_read.py`) – Fetches email attachments
+  
+
+- Extractor Module (`extract_text.py`) – Extracts raw text from PDFs
+  
+
+- Parser Module (`invoicenumber.py`) – Extracts structured fields using regex
+  
+
+- Export Module (`data_excel.py`) – Saves parsed data into CSV
+  
+
+- Interface (`tinker.py`, `here.html`) – GUI/HTML for user interaction
+  
+
+- Main Pipeline (`final.py`) – Runs the complete pipeline
 
 
-Sample Output
 
-Example structure of extracted_data.csv:
+  
+4. Technology Stack
+
+   
+- Python 3.x
+  
+
+- pandas
+  
+
+- PyPDF2 / pdfplumber / fitz (PyMuPDF)
+  
+
+- imaplib / email
+  
+
+- tkinter (GUI)
+  
+
+- re, os, logging
+
+  
+5. How to Use
+
+•	Install dependencies with `pip install -r requirements.txt`
+
+
+•	Configure your email credentials in `imap.py`
+
+
+•	Run `final.py` to execute the end-to-end process
+
+
+•	View the output in `extracted_data.csv`
+
+
+•	Optionally, run `tinker.py` for GUI or open `here.html` in a browser
+
+ 
+ 
+
+
+6. Sample Output
+
+    
+
+A sample output CSV contains:
+
 
 Invoice Number, Date, Vendor, Amount
-INV-2345, 2025-06-20, Tech Supplies Inc., $1,250.00
 
-🔐 Email Access Setup:
 
-Ensure your email provider allows IMAP access and that credentials are securely stored (update imap.py or .env if used).
+INV-2025-001, 2025-06-21, Acme Supplies, $1,200.00
+
+
+
+7.Future Enhancements
+   
+- Integrate OCR for scanned PDFs
+  
+
+- Use NLP for intelligent field extraction
+  
+
+- REST API or web dashboard
+  
+
+- Filter emails by subject/date/vendor
+
+  
+8. Conclusion
+
+   
+This system simplifies and accelerates the processing of invoice documents by eliminating manual entry.
+It is modular, scalable, and can be adapted for more advanced use cases such as OCR or database integration.
