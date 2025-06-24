@@ -123,4 +123,4 @@ INV-2025-001, 2025-06-21, Acme Supplies, $1,200.00
 
    
 This system simplifies and accelerates the processing of invoice documents by eliminating manual entry.
-It is modular, scalable, and can be adapted for more advanced use cases such as OCR or database integration.
+The Invoice PDF Extraction System effectively automates the labor-intensive process of collecting, extracting, and organizing invoice data from emails and PDF attachments. By leveraging email integration, PDF parsing, and structured data export, it reduces human effort, minimizes errors, and accelerates financial workflows.
