@@ -1,14 +1,14 @@
                                               
-  AUTOMATED INVOICE PROCESSING SYSTEM
+ # AUTOMATED INVOICE PROCESSING SYSTEM
   
-1. Introduction
+# 1. Introduction
    
 The Automated Invoice processing System automates the retrieval of invoice documents from email and extracts key invoice information such as invoice number, date, amount, and vendor name. The extracted data is exported into structured CSV files for further use in financial processes.
 
 
 
 
-2. Objectives
+# 2. Objectives
    
 - Automatically retrieve invoice attachments from emails
 
@@ -23,7 +23,7 @@ The Automated Invoice processing System automates the retrieval of invoice docum
 
 
   
-3. System Architecture
+# 3. System Architecture
 
 
    
@@ -50,7 +50,7 @@ The system is built using modular Python scripts. Below are the components:
 
 
   
-4. Technology Stack
+# 4. Technology Stack
 
    
 - Python 3.x
@@ -71,7 +71,7 @@ The system is built using modular Python scripts. Below are the components:
 - re, os, logging
 
   
-5. How to Use
+# 5. How to Use
 
 •	Install dependencies with `pip install -r requirements.txt`
 
@@ -91,7 +91,7 @@ The system is built using modular Python scripts. Below are the components:
  
 
 
-6. Sample Output
+# 6. Sample Output
 
     
 
@@ -105,7 +105,7 @@ INV-2025-001, 2025-06-21, Acme Supplies, $1,200.00
 
 
 
-7.Future Enhancements
+# 7.Future Enhancements
    
 - Integrate OCR for scanned PDFs
   
@@ -119,7 +119,7 @@ INV-2025-001, 2025-06-21, Acme Supplies, $1,200.00
 - Filter emails by subject/date/vendor
 
   
-8. Conclusion
+# 8. Conclusion
 
    
 This system simplifies and accelerates the processing of invoice documents by eliminating manual entry.
